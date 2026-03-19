@@ -1,0 +1,434 @@
+Task:
+
+Create an automation tree in Mailchimp for a five-department college, with 100 students in each department, to manage an event for the college placement drive on November 1. The automation tree should use if/else conditions, time delays, and wait-for-trigger functions.
+
+
+
+Mail #1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Placement Drive</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #0b4a8b;
+            color: #ffffff;
+            text-align: center;
+            padding: 18px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px 25px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .section-title {
+            color: #0b4a8b;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            padding: 15px 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        Capgemini Campus Placement Drive
+    </div>
+
+    <div class="content">
+
+        <p>Dear Students,</p>
+
+        <p>
+            We are pleased to inform you that <span class="highlight">Capgemini</span> will be conducting a 
+            <span class="highlight">Campus Recruitment Drive</span> at our college on 
+            <span class="highlight">November 1st, 2025</span>. This is a great opportunity for final-year students 
+            across all departments (CSE, ECE, EEE, Mechanical, Civil, etc.) to showcase their skills and secure 
+            a position with a reputed multinational company.
+        </p>
+
+        <div class="section-title">Details of the Drive:</div>
+        <ul>
+            <li><span class="highlight">Company:</span> Capgemini</li>
+            <li><span class="highlight">Date:</span> November 1st, 2025</li>
+            <li><span class="highlight">Eligibility:</span> Final-year students meeting placement criteria</li>
+            <li><span class="highlight">Location:</span> XYZ Engineering College</li>
+            <li><span class="highlight">Reporting Time:</span> 10:00 AM</li>
+        </ul>
+
+        <div class="section-title">Instructions for Students:</div>
+        <div class="instructions">
+            <ol>
+                <li>Carry 2 copies of your updated resume and passport-size photographs.</li>
+                <li>Bring your college ID card for verification.</li>
+                <li>Be in formal attire as per placement guidelines.</li>
+                <li>Ensure you have copies of all relevant academic certificates.</li>
+            </ol>
+        </div>
+
+        <p>
+            This is an excellent platform to begin your professional journey with a leading global organization. 
+            We encourage all eligible students to participate and make the most of this opportunity.
+        </p>
+
+        <p class="highlight" style="text-align:center;">
+            For any queries, please contact the Placement Cell.
+        </p>
+
+        <p style="text-align:center;">Wishing you the very best!</p>
+
+        <p style="text-align:center;">Regards,<br>Placement Cell</p>
+
+    </div>
+
+    <div class="footer">
+        © 2025 XYZ Engineering College
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+Mail #2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reminder - Capgemini Campus Drive</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #e63946;
+            color: #ffffff;
+            text-align: center;
+            padding: 18px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px 25px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .section-title {
+            color: #e63946;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+        }
+
+        .instructions li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        Reminder: Capgemini Campus Drive
+    </div>
+
+    <div class="content">
+
+        <p>Dear Students,</p>
+
+        <p>
+            This is a gentle reminder about the 
+            <span class="highlight">Capgemini Campus Recruitment Drive</span> 
+            scheduled on <span class="highlight">November 1st, 2025</span> at our college.
+        </p>
+
+        <p>
+            If you missed the earlier communication, please note that this is a valuable 
+            opportunity for final-year students from all departments to start their careers 
+            with a leading global company.
+        </p>
+
+        <div class="section-title">Drive Details:</div>
+        <ul>
+            <li><span class="highlight">Company:</span> Capgemini</li>
+            <li><span class="highlight">Date:</span> November 1st, 2025</li>
+            <li><span class="highlight">Eligibility:</span> Final-year students (CSE, CIVIL, MECH, ECE, EEE)</li>
+            <li><span class="highlight">Venue:</span> XYZ Engineering College</li>
+            <li><span class="highlight">Reporting Time:</span> 10:00 AM</li>
+        </ul>
+
+        <div class="section-title">Important Instructions:</div>
+        <div class="instructions">
+            <ol>
+                <li>Carry 2 copies of your updated resume and passport-size photographs.</li>
+                <li>Bring your college ID card and academic certificates.</li>
+                <li>Be in formal attire as per placement guidelines.</li>
+            </ol>
+        </div>
+
+        <p style="text-align:center;">
+            We encourage you to attend and make the most of this opportunity.
+        </p>
+
+        <p class="highlight" style="text-align:center;">
+            For queries, please contact the Placement Cell.
+        </p>
+
+        <div class="footer">
+            <p>Regards,</p>
+            <p><strong>Arun Raj</strong><br>
+            Training & Placement Cell<br>
+            XYZ Engineering College</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+Mail #3
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All the Best - Interview</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #243b5a;
+            color: #ffffff;
+            text-align: center;
+            padding: 18px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px 25px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .section-title {
+            color: #243b5a;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .reminders ol {
+            padding-left: 20px;
+        }
+
+        .reminders li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        All the Best for Your Interview!
+    </div>
+
+    <div class="content">
+
+        <p>Dear Student,</p>
+
+        <p>
+            We wish you <span class="highlight">all the very best</span> for your upcoming 
+            <span class="highlight">Capgemini Campus Recruitment Drive</span> scheduled on 
+            <span class="highlight">November 1st, 2025</span>.
+        </p>
+
+        <p>
+            This is an excellent opportunity to showcase your skills and begin your professional 
+            journey with a global leader.
+        </p>
+
+        <div class="section-title">Drive Details:</div>
+        <ul>
+            <li><span class="highlight">Company:</span> Capgemini</li>
+            <li><span class="highlight">Date:</span> November 1st, 2025</li>
+            <li><span class="highlight">Venue:</span> XYZ Engineering College</li>
+            <li><span class="highlight">Reporting Time:</span> 10:00 AM</li>
+        </ul>
+
+        <div class="section-title">Important Reminders:</div>
+        <div class="reminders">
+            <ol>
+                <li>Carry 2 copies of your updated resume.</li>
+                <li>Bring passport-size photographs, college ID card, and academic certificates.</li>
+                <li>Be in proper formal attire.</li>
+                <li>Arrive on time and stay confident.</li>
+            </ol>
+        </div>
+
+        <p style="text-align:center;">
+            Believe in yourself, stay focused, and give your best.  
+            We are confident in your abilities and look forward to your success.
+        </p>
+
+        <div class="footer">
+            <p>Best Wishes,</p>
+            <p><strong>Arun Raj</strong><br>
+            Training & Placement Cell<br>
+            XYZ Engineering College</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
